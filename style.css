@@ -11,3 +11,28 @@ nav{overflow-x:auto;display:flex;gap:4px;scrollbar-width:thin}nav button{flex:1 
 .assistant-cards{display:grid;gap:12px;margin-top:16px}.assistant-card{border-left:4px solid #86a994}.assistant-card.urgent{border-left-color:#d35e50}.assistant-card.warning{border-left-color:#dba447}.assistant-card h3{margin-bottom:8px}.assistant-card p{margin:0}.assistant-card ul{margin:10px 0 0;padding-left:20px}.assistant-card li{margin:5px 0}
 
 .journal-photo{width:100%;max-height:340px;overflow:hidden;border-radius:12px;background:#edf3e8;text-align:center;padding:8px}.journal-photo img{max-width:100%;max-height:330px;object-fit:contain;border-radius:8px}#journal-form input[type=file]{padding:9px}#planting-form button{margin-top:12px}
+
+
+/* JARDÉO 2.0 — identité visuelle */
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#23372c;background:#f7f7f0;--forest:#184d38;--leaf:#27734c;--sage:#e7eee1;--line:#e1e8dc;--cream:#f7f7f0}
+html{scroll-behavior:smooth}body{background:radial-gradient(ellipse at top right,#edf4e8 0,transparent 38%),var(--cream);min-height:100vh}
+.app{max-width:1080px;padding:22px 22px 10px}
+header{background:linear-gradient(125deg,#123d30 0%,#246447 68%,#397d52 100%);border-radius:26px;padding:29px 30px;box-shadow:0 12px 30px #174c3626;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;right:-42px;bottom:-95px;width:220px;height:220px;border:1px solid #ffffff29;border-radius:50%;pointer-events:none}
+header h1{font-size:2.15rem;letter-spacing:.045em;font-weight:850}header p{font-size:.94rem;color:#d6eadb;letter-spacing:.015em}#today{font-weight:600;color:#e9f5eb}
+nav{position:sticky;top:0;z-index:20;background:#f7f7f0f2;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid #e1e8dc;gap:7px;padding:12px 2px 13px;margin-bottom:8px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}
+nav button{background:transparent;border-radius:13px;color:#516b58;font-weight:650;padding:11px 15px;transition:background .18s,transform .18s}nav button:hover{background:#e8efe3;filter:none}nav button.active{background:#1d6041;color:white;box-shadow:0 4px 12px #1d604126}
+main{min-height:55vh}h2{font-size:1.45rem;color:#183f2d;letter-spacing:-.025em;margin:25px 0 15px}h3{color:#234633;letter-spacing:-.01em}
+.card{background:#fff;border:1px solid #e8eee4;border-radius:22px;padding:21px;box-shadow:0 7px 22px #294e2910;margin:13px 0}.grid{gap:15px}.grid .card{transition:transform .2s,box-shadow .2s}.grid .card:hover{transform:translateY(-2px);box-shadow:0 10px 25px #294e291a}
+.big{font-size:2.5rem;font-weight:850;letter-spacing:-.045em;color:#1e6745}.muted{color:#6c7e70}.pill{background:#e8f3e7;color:#2b6744;border:1px solid #d8e8d5;font-weight:650;padding:5px 11px}
+button{border-radius:12px;font-weight:650;transition:filter .18s,transform .18s}button:active{transform:scale(.985)}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #8fbca2;outline-offset:2px}.primary{background:#206a47;color:white;box-shadow:0 3px 9px #206a471a}.danger{background:#fce9e4;color:#9a3430}
+input,select,textarea{border:1px solid #cbd9cb;border-radius:12px;padding:13px;background:#fff}input:focus,select:focus,textarea:focus{border-color:#4a9469}label{color:#345541}
+.notice{background:linear-gradient(135deg,#e8f4e4,#f0f6e9);border:1px solid #d5e7ce;border-radius:18px;padding:18px}.plant-emoji{background:#edf4e9;border-radius:17px}.botanical-photo img{border-radius:17px}.botanical-info section{border-radius:15px;background:#f0f5eb}.zone{border-radius:19px;border-color:#b1c9ac;background:#e9f1e3}.garden-grid{border-radius:18px}
+.weather-day{background:#f3f8ef;border-radius:15px;border-color:#e0ead9}.assistant-card{border-left-width:5px}.reminder-item .pill{white-space:nowrap}.journal-photo{border-radius:16px}
+footer{color:#829184;font-size:.78rem;padding:30px 0}
+@media(max-width:600px){
+.app{padding:10px 12px 16px}header{padding:23px 20px;border-radius:22px;align-items:flex-start}header h1{font-size:1.75rem}header p{font-size:.85rem}#today{font-size:.75rem;max-width:105px}
+nav{margin:0 -12px 7px;padding:10px 12px;gap:6px;top:0}nav button{font-size:.79rem;padding:11px 12px;border-radius:12px}
+h2{font-size:1.33rem;margin:20px 0 12px}.card{border-radius:19px;padding:17px}.grid{gap:11px}.actions button{min-height:43px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
