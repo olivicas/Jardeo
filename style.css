@@ -120,3 +120,20 @@ nav.bottom-nav button{flex:none;min-height:53px;margin:0;padding:5px 2px;box-sha
 .home-weather strong{display:block;font-size:.94rem}
 .home-weather small{display:block;color:#647c6b;font-size:.76rem;margin-top:2px}
 .home-weather button{margin-left:auto;background:transparent;color:#245a3d;padding:5px 9px;font-size:1.2rem}
+
+/* JARDÉO 3.0.8 : éditeur de jardin plus clair sur mobile */
+.garden-intro{margin:18px 0 12px}
+.garden-intro h2{font-size:1.35rem;letter-spacing:-.025em;margin:0 0 5px;color:#194b35}
+.garden-intro p{font-size:.9rem;line-height:1.4;color:#728477;margin:0}
+.garden-editor{padding:14px;border:1px solid #e1eade;border-radius:19px;box-shadow:0 4px 18px #173d210a}
+.garden-editor .map-mode{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;background:#eef3eb;border-radius:13px;padding:5px;margin:0 0 16px}
+.garden-editor .map-mode button{min-width:0;border-radius:10px;padding:11px 5px;font-size:.86rem;font-weight:700;background:transparent;color:#526d59;line-height:1.25}
+.garden-editor .map-mode button.primary{background:#206a48;color:white;box-shadow:0 2px 7px #174c3626}
+.garden-editor label{font-size:.86rem;color:#365b44;margin:0 0 6px}
+.garden-editor select{font-size:.92rem;border-color:#d4e1d2;background:#fbfdf9;padding:11px 12px}
+.garden-hint{color:#728477;font-size:.81rem;line-height:1.4;margin:9px 0 13px}
+.garden-editor .garden-grid{margin:8px 0 12px;gap:4px;padding:6px;border:2px solid #91b58a;background:#d3e6cb;border-radius:15px;aspect-ratio:4/3}
+.garden-editor .garden-cell{border-radius:6px;border-color:#b6d0ad}
+.garden-editor .actions{margin-top:10px}
+.garden-editor .actions button{font-size:.82rem;padding:10px 12px;width:100%;background:#edf3e9;color:#44634e}
+@media(max-width:380px){.garden-editor{padding:11px}.garden-editor .map-mode button{font-size:.8rem}.garden-editor .garden-grid{gap:3px;padding:5px}}
