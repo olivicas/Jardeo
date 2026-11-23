@@ -1,0 +1,20 @@
+{
+  "id": "/Jardeo/",
+  "name": "JARDÉO — Mon jardin intelligent",
+  "short_name": "JARDÉO",
+  "description": "Mon carnet de jardin : plantes, météo, calendrier et rappels.",
+  "lang": "fr",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f0",
+  "theme_color": "#184d38",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
