@@ -62,3 +62,6 @@ h2{font-size:1.33rem;margin:20px 0 12px}.card{border-radius:19px;padding:17px}.g
 @media(max-width:600px){.main-nav>button,.nav-more{flex:1 1 calc(33.333% - 8px);min-width:0}.main-nav>button,.nav-more>summary{font-size:.78rem;padding:11px 6px}}
 
 .home-garden-photo{position:relative;margin-top:16px;border-radius:18px;overflow:hidden;background:#dcebd8;min-height:180px}.home-garden-photo img{display:block;width:100%;height:clamp(180px,30vw,290px);object-fit:cover}.home-garden-photo span{position:absolute;bottom:0;left:0;right:0;padding:22px 18px 15px;color:white;font-size:clamp(1.1rem,3vw,1.55rem);font-weight:750;text-shadow:0 2px 9px #0009;background:linear-gradient(transparent,#0008)}
+
+/* Centrage de la photographie d'accueil */
+.home-garden-photo img{object-position:center center}
