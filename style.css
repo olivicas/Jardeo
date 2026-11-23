@@ -62,3 +62,12 @@ h2{font-size:1.33rem;margin:20px 0 12px}.card{border-radius:19px;padding:17px}.g
 @media(max-width:600px){.main-nav>button,.nav-more{flex:1 1 calc(33.333% - 8px);min-width:0}.main-nav>button,.nav-more>summary{font-size:.78rem;padding:11px 6px}}
 
 
+
+/* JARDÉO 2.9.5 : navigation directe sans menu Plus */
+.main-nav{display:block;padding:12px 0 10px;overflow:visible}
+.nav-primary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.nav-primary button{min-width:0;padding:12px 5px;white-space:nowrap;font-size:.89rem;font-weight:650}
+.nav-secondary{display:flex;gap:6px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding:9px 1px 5px;-webkit-overflow-scrolling:touch}
+.nav-secondary button{flex:1 0 auto;padding:8px 13px;white-space:nowrap;font-size:.82rem;background:#edf3eb;color:#3b6650}
+.nav-primary button.active,.nav-secondary button.active{background:#216943;color:white}
+@media(max-width:600px){.nav-primary{grid-template-columns:repeat(3,minmax(0,1fr))}.nav-primary button{font-size:.83rem;padding:11px 5px}.nav-secondary button{font-size:.79rem;padding:9px 12px}}
