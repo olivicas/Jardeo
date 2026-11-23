@@ -46,3 +46,17 @@ h2{font-size:1.33rem;margin:20px 0 12px}.card{border-radius:19px;padding:17px}.g
 
 /* JARDÉO 2.4 : fiches d'entretien */
 .care-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.care-tile{background:#f1f7ed;border:1px solid #e0ebd9;border-radius:15px;padding:14px}.care-tile strong{color:#205d3c}.care-tile p{margin:7px 0 0;line-height:1.5}.care-unverified{border-left:4px solid #d3a458}@media(max-width:600px){.care-grid{grid-template-columns:1fr}.care-tile{padding:12px}}
+
+/* Navigation simplifiée 2.9 */
+.main-nav{display:flex;align-items:stretch;gap:6px;overflow:visible;flex-wrap:wrap}
+.main-nav>button{flex:1 1 auto;white-space:nowrap}
+.nav-more{position:relative;flex:1 1 auto;min-width:100px}
+.nav-more>summary{list-style:none;cursor:pointer;text-align:center;border-radius:11px;padding:11px 15px;background:#e0ecdf;color:#174c36;white-space:nowrap}
+.nav-more>summary::-webkit-details-marker{display:none}
+.nav-more[open]>summary,.nav-more:has(button.active)>summary{background:#216943;color:#fff}
+.nav-more-menu{position:absolute;right:0;top:calc(100% + 5px);z-index:30;min-width:190px;max-width:min(85vw,300px);display:grid;gap:5px;padding:8px;background:white;border:1px solid #d9e6d7;border-radius:14px;box-shadow:0 12px 30px #153b2729}
+.nav-more-menu button{text-align:left;white-space:nowrap}
+.catalog-filter{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}
+.catalog-filter label{margin-top:0}
+#catalog-count{margin:10px 0 0}
+@media(max-width:600px){.main-nav>button,.nav-more{flex:1 1 calc(33.333% - 8px);min-width:0}.main-nav>button,.nav-more>summary{font-size:.78rem;padding:11px 6px}}
