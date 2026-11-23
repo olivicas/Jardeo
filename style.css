@@ -43,3 +43,6 @@ h2{font-size:1.33rem;margin:20px 0 12px}.card{border-radius:19px;padding:17px}.g
 
 /* Scanner botanique */
 #scan-form input[type=file]{padding:14px;border:2px dashed #b6cfb7;background:#f7faf5}#scan-form button[type=submit]{margin-top:16px;width:100%}.scan-preview{border-radius:16px;overflow:hidden;margin-top:12px;background:#e8f1e7}.scan-preview img{max-width:100%;max-height:280px;object-fit:contain;display:block;margin:auto}
+
+/* JARDÉO 2.4 : fiches d'entretien */
+.care-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:15px 0}.care-tile{background:#f1f7ed;border:1px solid #e0ebd9;border-radius:15px;padding:14px}.care-tile strong{color:#205d3c}.care-tile p{margin:7px 0 0;line-height:1.5}.care-unverified{border-left:4px solid #d3a458}@media(max-width:600px){.care-grid{grid-template-columns:1fr}.care-tile{padding:12px}}
