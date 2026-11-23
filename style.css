@@ -137,3 +137,5 @@ nav.bottom-nav button{flex:none;min-height:53px;margin:0;padding:5px 2px;box-sha
 .garden-editor .actions{margin-top:10px}
 .garden-editor .actions button{font-size:.82rem;padding:10px 12px;width:100%;background:#edf3e9;color:#44634e}
 @media(max-width:380px){.garden-editor{padding:11px}.garden-editor .map-mode button{font-size:.8rem}.garden-editor .garden-grid{gap:3px;padding:5px}}
+
+.garden-notice{margin:9px 0 3px;padding:10px 12px;background:#fff4df;color:#765017;border:1px solid #f0d6a4;border-radius:11px;font-size:.86rem;font-weight:600;line-height:1.4}
