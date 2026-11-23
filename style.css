@@ -112,3 +112,11 @@ nav.bottom-nav button{flex:none;min-height:53px;margin:0;padding:5px 2px;box-sha
 .plant-tool-catalog{grid-column:1/-1;display:flex;flex-direction:row;align-items:center;gap:11px;background:#e8f2e7}
 .plant-tool-catalog strong{flex:1}
 .plant-tool-catalog>span:last-child{font-size:1.5rem}
+
+/* Météo discrète sous le message de bienvenue */
+.home-weather{display:flex;align-items:center;gap:11px;background:#edf5ed;border:1px solid #dceadc;border-radius:14px;padding:10px 13px;margin:8px 0 14px;color:#23553c;font-size:.88rem}
+.home-weather-icon{font-size:1.6rem}
+.home-weather>div{flex:1;min-width:0}
+.home-weather strong{display:block;font-size:.94rem}
+.home-weather small{display:block;color:#647c6b;font-size:.76rem;margin-top:2px}
+.home-weather button{margin-left:auto;background:transparent;color:#245a3d;padding:5px 9px;font-size:1.2rem}
