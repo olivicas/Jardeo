@@ -102,3 +102,13 @@ header p{font-size:.85rem}
 /* Correctif 3.0.1 : neutraliser les anciennes règles nav sticky */
 nav.bottom-nav{position:fixed;top:auto;bottom:0;left:0;right:0;height:auto;min-height:0;margin:0;width:100%;max-height:calc(76px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;overflow:visible;backdrop-filter:none;-webkit-backdrop-filter:none}
 nav.bottom-nav button{flex:none;min-height:53px;margin:0;padding:5px 2px;box-shadow:none;transform:none}
+
+/* Mes plantes : accès rapides compacts */
+.plant-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 12px}
+.plant-tool{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;padding:13px 15px;background:#fff;border:1px solid #e2eadf;border-radius:15px;color:#20573a;box-shadow:0 2px 9px #173d210b}
+.plant-tool>span:first-child{font-size:1.35rem}
+.plant-tool strong{font-size:.96rem}
+.plant-tool small{color:#708375;font-size:.78rem}
+.plant-tool-catalog{grid-column:1/-1;display:flex;flex-direction:row;align-items:center;gap:11px;background:#e8f2e7}
+.plant-tool-catalog strong{flex:1}
+.plant-tool-catalog>span:last-child{font-size:1.5rem}
