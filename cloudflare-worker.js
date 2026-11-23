@@ -18,8 +18,19 @@ export default {
   try{data=await request.formData()}catch{return reply('Formulaire invalide')}
   const photo=data.get('images');
   if(!(photo instanceof File)||!photo.type.startsWith('image/')||photo.size>MAX_BYTES||photo.size===0)return reply('Photo invalide ou trop volumineuse',413);
-  // Limitation indicative par IP via Cloudflare Rate Limiting, à activer dans le tableau de bord.
-  // CORS seul ne constitue PAS une protection anti-abus.
+  // Limitation appliquée côté serveur, avant chaque appel payant/quoté à Pl@ntNet.
+  // Le binding SCAN_RATE_LIMITER est configuré dans Cloudflare : 5 requêtes / 60 s.
+  // Cloudflare Rate Limiting est approximatif et n'est pas une garantie anti-abus absolue.
+  if(!env.SCAN_RATE_LIMITER || typeof env.SCAN_RATE_LIMITER.limit!=='function')
+    return reply('Protection du scanner non configurée',503);
+  const ip=request.headers.get('CF-Connecting-IP');
+  if(!ip)return reply('Impossible de vérifier la limite de scans',503);
+  let allowed;
+  try{allowed=await env.SCAN_RATE_LIMITER.limit({key:ip})}
+  catch{return reply('Vérification de la limite momentanément indisponible',503)}
+  if(!allowed.success)
+    return new Response(JSON.stringify({error:'Trop de scans : patientez une minute avant de réessayer.'}),{status:429,headers:{...cors,'Content-Type':'application/json','Cache-Control':'no-store','Retry-After':'60'}});
+  // Le contrôle CORS n'est pas une authentification ; cette limitation réduit les abus.
   const form=new FormData();
   form.append('images',photo,photo.name||'plante.jpg');
   let upstream;
