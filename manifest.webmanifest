@@ -1,7 +1,7 @@
 {
   "id": "/Jardeo/",
-  "name": "JARDÉO — Mon jardin intelligent",
-  "short_name": "JARDÉO",
+  "name": "TERROLOGIS — Mon jardin intelligent",
+  "short_name": "TERROLOGIS",
   "description": "Mon carnet de jardin : plantes, météo, calendrier et rappels.",
   "lang": "fr",
   "start_url": "./?source=pwa",
